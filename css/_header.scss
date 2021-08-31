@@ -1,6 +1,6 @@
 
     header{
-        height: 10vh;display: flex;justify-content: space-between;align-items: center;padding-right: 80px;
+        height: 10vh;display: flex;justify-content: space-between;align-items: center;
         width: 100%;
         .logo{
             width: auto;height: 190px;
@@ -76,22 +76,9 @@
  $variable-burger-animation-function:  cubic-bezier(.68, -.55, .265, 1.55);
  
 
- *:before,
- *:after {
-   box-sizing: border-box;
-   margin:     0;
-   padding:    0;
- }
  
- body {
-   font-family:      $font-family;
-   font-size:        $font-size;
-   background-color: $color-body;
- }
  
- /***************************
-  *  Application Main Styles
-  **************************/
+
  #menu--toggle[type="checkbox"]:not(:checked),
  #menu--toggle[type="checkbox"]:checked {
    display: none;
@@ -134,16 +121,17 @@
  
  .menu__body {
    position: absolute;
-   left: 0;
+   top: 0;
+   right: 0;
    width: 7em;
    height: 7em;
    margin: 0;
    padding: 0;
    background-color: $color-menu;
-   border-bottom-right-radius: 100%;
+   border-bottom-left-radius: 100%;
    box-shadow: 3px 3px 7px rgba($color-text, .2);
    z-index: 10;
-   animation: checkboxUncheckedAnimation $variable-burger-animation-time both;
+
  }
  
  .menu__body-element,

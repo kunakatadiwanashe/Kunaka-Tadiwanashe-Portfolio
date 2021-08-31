@@ -72,7 +72,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 80px;
   width: 100%;
 }
 header .logo {
@@ -120,22 +119,6 @@ header ul button:hover {
   box-shadow: 2px 4px 5px #fff;
 }
 
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  background-color: #e2e2e2;
-}
-
-/***************************
- *  Application Main Styles
- **************************/
 #menu--toggle[type=checkbox]:not(:checked),
 #menu--toggle[type=checkbox]:checked {
   display: none;
@@ -175,17 +158,16 @@ body {
 
 .menu__body {
   position: absolute;
-  left: 0;
+  top: 0;
+  right: 0;
   width: 7em;
   height: 7em;
   margin: 0;
   padding: 0;
   background-color: #fcfcfc;
-  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
   box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
   z-index: 10;
-  -webkit-animation: checkboxUncheckedAnimation 0.35s both;
-          animation: checkboxUncheckedAnimation 0.35s both;
 }
 
 .menu__body-element,
