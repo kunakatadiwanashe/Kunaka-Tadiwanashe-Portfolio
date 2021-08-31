@@ -30,8 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.4;
-	background-color: black;
+	background-color: #040221;
 	color: #fff;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -56,6 +57,14 @@ table {
 
 @mixin center {
 	display: flex;justify-content: center;align-items: center;
+}
+
+@mixin btn {
+	width: 150px;font-size: 25px;text-transform: uppercase;border-radius: 40px 0 40px 0px;font-family: 'bold';
+	outline: none;border: none;color: #0E0C38;
+	&:hover{
+		background-color: #0E0C38;color: #fff;border: 2px solid #fff;outline: none;box-shadow: 2px 4px 5px #fff;
+	}
 }
 
 // fonts
