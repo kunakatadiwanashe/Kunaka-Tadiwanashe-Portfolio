@@ -1,4 +1,13 @@
+$color-text:  #ffffff;
+$color-menu:  #fcfcfc;
+$variable-menu-animation-time:        1s;
+$variable-burger-animation-time:      .35s;
+$variable-menu-animation-function:    cubic-bezier(.25, .1, .25, 1);
+$variable-burger-animation-function:  cubic-bezier(.68, -.55, .265, 1.55);
 
+    
+    
+    
     header{
         height: 10vh;display: flex;justify-content: space-between;align-items: center;
         width: 100%;
@@ -12,72 +21,21 @@
             li{
                 padding-right: 35px;
                 a{
-                    color: rgb(255, 255, 255);font-size: 30px;text-transform: capitalize;text-decoration: none;font-family: 'semi';transition:  .5s ease-in;
+                    color: rgb(255, 255, 255);font-size: 30px;text-transform: capitalize;text-decoration: none;font-family: 'semi';transition:  .5s ease-in;transition: 0.5s;
                     &:hover{
-                        color:  #fff;text-decoration: underline;text-decoration-color: #261ebe ;text-decoration-style: wavy;
+                        color:  $color-text;text-decoration: underline;text-decoration-color: #FF0513;text-decoration-style: wavy;
                     }
                 }
              
             }
-            button{
-               @include btn;
-            }
+           
         }
     }
 
 
 
 
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- $font-family: 'Open Sans', sans-serif;
- $font-size:   1em;
- 
- $color-body:  #e2e2e2;
- $color-text:  #282828;
- $color-menu:  #fcfcfc;
- 
- $variable-menu-animation-time:        1s;
- $variable-burger-animation-time:      .35s;
- 
- $variable-menu-animation-function:    cubic-bezier(.25, .1, .25, 1);
- $variable-burger-animation-function:  cubic-bezier(.68, -.55, .265, 1.55);
- 
-
- 
- 
 
  #menu--toggle[type="checkbox"]:not(:checked),
  #menu--toggle[type="checkbox"]:checked {
@@ -88,92 +46,54 @@
  .menu--toggle__burger,
  .menu--toggle__burger:before,
  .menu--toggle__burger:after {
-   position: absolute;
-   top: 1.6em;
-   right: 1.6em;
-   width: 2em;
-   height: 5px;
-   background-color: $color-text;
-   border-radius: 2px;
-   cursor: pointer;
-   z-index: 100;
-   transition: $variable-burger-animation-time $variable-menu-animation-function;
+   position: absolute; top: 1.6em; right: 1.6em;width: 2em; height: 5px; background-color: $color-text; border-radius: 2px;
+   cursor: pointer;  z-index: 100; transition: $variable-burger-animation-time $variable-menu-animation-function;
  }
  
  .menu--toggle__trigger {
-   height: 2em;
-   background: none;
+   height: 2em; background: none;
  }
  
  .menu--toggle__burger {
    
    &:before {
-     content: "";
-     top: 10px;
-     left: 0;
+     content: ""; top: 10px;left: 0;
    }
    &:after {
-     content: "";
-     top: 20px;
-     left: 0;
+     content: ""; top: 20px;left: 0;
    }
  }
  
  .menu__body {
-   position: absolute;
-   top: 0;
-   right: 0;
-   width: 7em;
-   height: 7em;
-   margin: 0;
-   padding: 0;
-   background-color: $color-menu;
-   border-bottom-left-radius: 100%;
-   box-shadow: 3px 3px 7px rgba($color-text, .2);
-   z-index: 10;
+   position: absolute;top: 0; right: 0;width: 7em;height: 7em;margin: 0;padding: 0;background: #FF0513;background-image: linear-gradient( 45deg,#FF0513,#0E0C38 );
+   border-bottom-left-radius: 100%; box-shadow: 3px 3px 7px rgba($color-text, .2); z-index: 10;padding-top: 70PX;
+   li{
+       @include center;padding: 20px;
+   }
+   button{
+    @include btn;margin: 0 auto;background-color: #0E0C38;padding: 5px 0 5px 0;
+ }
+ }
+ 
 
- }
- 
- .menu__body-element,
  .menu__body-link {
-   display: none;
-   margin: 4.4em 0 -3.3em -.1em;
-   font-weight: normal;
-   color: $color-text;
-   text-decoration: none;
-   text-transform: none;
-   list-style: none;
-   outline: 0;
+   display: none;color: #fff;text-decoration: none;text-transform: capitalize; list-style: none; outline: 0;;
  }
  
- .menu__body-element {
-   text-indent: 2em;
- }
- 
- .menu__body-link:hover {
-   display: block;
-   width: 0;
-   color: $color-text;
-   background-color: $color-body;
-   animation: changeWidthOfElementAnimation $variable-burger-animation-time both;
- }
+
+
  
  #menu--toggle:checked + .menu--toggle__trigger {
    
    & + .menu--toggle__burger {
-     top: 35px;
-     transform: rotate(405deg);
-     transition: transform $variable-burger-animation-time $variable-burger-animation-function;
+   
+     top: 35px; transform: rotate(405deg); 
    
      &:before {
-       top: 0;
-       transform: rotate(-90deg);
-       transition: transform $variable-burger-animation-time $variable-burger-animation-function;
+       top: 0; transform: rotate(-90deg); 
      }
      &:after {
-       top: 0;
-       transform: rotate(90deg);
-       transition: transform $variable-burger-animation-time $variable-burger-animation-function;
+       top: 0; transform: rotate(90deg);
      }
    }
    
@@ -181,7 +101,6 @@
      animation: checkboxCheckedAnimation $variable-menu-animation-time $variable-menu-animation-function both;
    }
    
-   & ~ .menu__body .menu__body-element,
    & ~ .menu__body .menu__body-link {
      display: block;
    }
@@ -191,30 +110,12 @@
  
  @keyframes checkboxCheckedAnimation {
    50% {
-     width: 100vw;
-     height: 100vh;
+     width: 100vw;height: 100vh;
    }
    100% {
-     width: 100vw;
-     height: 100vh;
-     border-radius: 0;
+     width: 100vw;height: 100vh;border-radius: 0;
    }
  }
  
- @keyframes checkboxUncheckedAnimation {
-   0% {
-     width: 100vw;
-     height: 100vh;
-   }
- }
- 
- @keyframes changeWidthOfElementAnimation {
-   50% {
-     width: 0;
-   }
-   100% {
-     width: 100%;
-   }
- }
- 
+
    

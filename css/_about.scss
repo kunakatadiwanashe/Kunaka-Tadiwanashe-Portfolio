@@ -1,0 +1,34 @@
+.about{
+    
+    h2{
+       font-family: 'semi';font-size: 40px;padding: 50px;text-align: center;position: relative;
+       span{
+           font-size: 130px;font-weight: bolder;font-family: 'bold';text-transform: uppercase;position: absolute;z-index: -2;color:  #0e0c388e;
+           left: 0; right: 0; top: 0px; margin-left: auto; margin-right: auto;    
+     }
+     #about{
+        background-color: #FF0513;height: 2px;border: none;width: 20%;margin: 0 auto;
+    }
+    }
+    
+  .container{
+      display: flex;justify-content: space-between;
+    .pic{
+        width: 35%;padding: 30px;border: 10px double red;transform: rotate(40deg);margin-left: 30px;
+        img{
+            transform: rotate(-40deg);;height: 500px;
+        }
+    }
+    .personal-info{
+        width: 50%;
+        p{
+            font-family: 'light';font-size: 25px;padding-bottom: 40px;
+        }
+        .social{
+            a{
+                font-size: 20px;font-family: 'light';padding: 20px;text-transform: capitalize;color: #fff;
+            }
+        }
+    }
+  }
+}
