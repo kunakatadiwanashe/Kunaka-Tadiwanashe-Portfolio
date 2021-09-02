@@ -1,5 +1,5 @@
 .about{
-    
+    padding-bottom: 50px;
     h2{
        font-family: 'semi';font-size: 40px;padding: 50px;text-align: center;position: relative;
        span{
@@ -14,10 +14,14 @@
   .container{
       display: flex;justify-content: space-between;
     .pic{
-        width: 35%;padding: 30px;border: 10px double red;transform: rotate(40deg);margin-left: 30px;
+        width: 400px;height: 400px;padding: 30px;border: 10px double red;transform: rotate(45deg);margin-left: 30px;
+        box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.9);display: flex;justify-content: center;
+       .inner{
+           width: 220px;height: 200px;text-align: center;
         img{
-            transform: rotate(-40deg);;height: 500px;
+            transform: rotate(-45deg)
         }
+       }
     }
     .personal-info{
         width: 50%;
