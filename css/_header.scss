@@ -55,7 +55,7 @@ $variable-burger-animation-function:  cubic-bezier(.68, -.55, .265, 1.55);
  }
  
  .menu--toggle__burger {
-   
+  
    &:before {
      content: ""; top: 10px;left: 0;
    }

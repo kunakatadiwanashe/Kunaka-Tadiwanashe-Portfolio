@@ -14,8 +14,8 @@
   .container{
       display: flex;justify-content: space-between;
     .pic{
-        width: 400px;height: 400px;padding: 30px;border: 10px double red;transform: rotate(45deg);margin-left: 30px;
-        box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.9);display: flex;justify-content: center;
+        width: 400px;height: 400px;padding: 30px;border: 10px double  #0e0c388e;transform: rotate(45deg);margin-left: 30px;
+        box-shadow: inset 0px 0px 10px   #0e0c388e;;display: flex;justify-content: center;
        .inner{
            width: 220px;height: 200px;text-align: center;
         img{
