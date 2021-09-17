@@ -157,8 +157,7 @@ header ul li a:hover {
   height: 7em;
   margin: 0;
   padding: 0;
-  background: #FF0513;
-  background-image: linear-gradient(45deg, #FF0513, #0E0C38);
+  background-image: linear-gradient(45deg, #322ad1, #0E0C38);
   border-bottom-left-radius: 100%;
   box-shadow: 3px 3px 7px rgba(255, 255, 255, 0.2);
   z-index: 10;
@@ -272,6 +271,10 @@ header ul li a:hover {
 .banner .container .name h2 span {
   display: block;
   padding-left: 10px;
+}
+.banner .container .name h2::first-letter {
+  color: #322ad1;
+  font-size: 90px;
 }
 .banner .container .name h1 {
   font-size: 20px;
@@ -491,7 +494,6 @@ header ul li a:hover {
   .banner {
     height: 125vh;
     padding-top: 0px;
-    color: green;
   }
   .banner .container .name {
     width: 100%;
@@ -675,6 +677,10 @@ header ul li a:hover {
   font-family: "semi";
   padding: 30px 0 0 0;
 }
+.skills .container h2::first-letter {
+  color: #322ad1;
+  font-size: 90px;
+}
 .skills .container p {
   font-size: 20px;
   font-family: "light";
@@ -742,4 +748,71 @@ header ul li a:hover {
   #paris .bar {
     width: 30% !important;
   }
+}
+footer .container h2 {
+  font-family: "semi";
+  font-size: 50px;
+  margin-bottom: 30px;
+  height: 70px;
+}
+footer .container h2::first-letter {
+  color: #322ad1;
+  font-size: 90px;
+}
+footer .container .row .col-md-6 .contact {
+  padding-left: 120px;
+}
+footer .container .row .col-md-6 .contact h3 {
+  font-family: "semi";
+  font-size: 40px;
+  padding-top: 30px;
+}
+footer .container .row .col-md-6 .contact .contact-info li {
+  font-family: "light";
+  display: flex;
+  font-size: 20px;
+  align-items: flex-end;
+}
+footer .container .row .col-md-6 .contact .contact-info li span {
+  width: 100px;
+  font-size: 25px;
+  font-weight: bold;
+}
+footer .container .row .col-md-6 .contact .contact-info li a {
+  text-decoration: none;
+}
+footer .container .row .col-md-6 .contact .contact-info li a:hover {
+  color: #5361FF;
+}
+footer .container .row .col-md-6 form .form-control {
+  margin-bottom: 20px;
+  background-color: #5361ff10;
+  border: none;
+  color: #fff;
+  font-family: "semi";
+}
+footer .container .row .col-md-6 form .form-control::-moz-placeholder {
+  color: #ffffff;
+  font-family: "light";
+  font-size: 20px;
+}
+footer .container .row .col-md-6 form .form-control:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "light";
+  font-size: 20px;
+}
+footer .container .row .col-md-6 form .form-control::placeholder {
+  color: #ffffff;
+  font-family: "light";
+  font-size: 20px;
+}
+footer .container .row .col-md-6 form .btn {
+  background-color: #5361FF;
+  color: #fff;
+}
+footer p {
+  font-family: "light";
+  font-size: 16px;
+  text-align: center;
+  padding-top: 60px;
 }/*# sourceMappingURL=style.css.map */

@@ -65,7 +65,7 @@ $variable-burger-animation-function:  cubic-bezier(.68, -.55, .265, 1.55);
  }
  
  .menu__body {
-   position: absolute;top: 0; right: 0;width: 7em;height: 7em;margin: 0;padding: 0;background: #FF0513;background-image: linear-gradient( 45deg,#FF0513,#0E0C38 );
+   position: absolute;top: 0; right: 0;width: 7em;height: 7em;margin: 0;padding: 0;background-image: linear-gradient( 45deg,#322ad1,#0E0C38 );
    border-bottom-left-radius: 100%; box-shadow: 3px 3px 7px rgba($color-text, .2); z-index: 10;padding-top: 70PX;
    li{
        @include center;padding: 20px;

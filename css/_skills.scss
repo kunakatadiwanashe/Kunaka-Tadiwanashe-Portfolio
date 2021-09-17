@@ -4,6 +4,10 @@
     h2{
       font-family: 'semi';padding: 30px  0 0 0;
       }
+      h2::first-letter {
+        color: #322ad1;
+        font-size: 90px;
+    }
       p{
         font-size: 20px;font-family: 'light';;
       }

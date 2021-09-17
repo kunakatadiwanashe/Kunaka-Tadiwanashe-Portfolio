@@ -73,6 +73,15 @@ table {
 	}
 }
 
+@mixin h2 {
+		font-family: 'semi';font-size: 50px;margin-bottom: 30px;	
+		height: 70px; 
+		&::first-letter {
+			color: #322ad1;font-size: 90px;
+		}
+	 
+}
+
 // fonts
  
 @font-face {
