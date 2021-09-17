@@ -6,14 +6,13 @@ footer{
         .row{
             .col-md-6{
                 .contact{
-                    padding-left: 120px;
+                   
                     h3{
                         font-family: 'semi';font-size: 40px;padding-top: 30px;
                     }
                     .contact-info{
                         li{
-                            font-family: 'light';;
-                            display: flex;font-size: 20px;align-items: flex-end;
+                            font-family: 'light'; display: flex;font-size: 20px;align-items: flex-end;
                             span{
                                width: 100px;font-size: 25px;font-weight: bold;
                             }
@@ -47,3 +46,12 @@ footer{
         font-family: 'light';font-size: 16px;text-align: center;padding-top: 60px;
     }
 }
+
+
+
+
+ @media screen and (min-width:768px) {
+     .contact{
+        padding-left: 120px;
+     }
+ }

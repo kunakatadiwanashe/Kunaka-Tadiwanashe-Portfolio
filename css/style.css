@@ -762,9 +762,6 @@ footer .container h2::first-letter {
   color: #322ad1;
   font-size: 90px;
 }
-footer .container .row .col-md-6 .contact {
-  padding-left: 120px;
-}
 footer .container .row .col-md-6 .contact h3 {
   font-family: "semi";
   font-size: 40px;
@@ -818,4 +815,10 @@ footer p {
   font-size: 16px;
   text-align: center;
   padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    padding-left: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */
