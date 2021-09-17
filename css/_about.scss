@@ -5,17 +5,17 @@
        font-family: 'semi';font-size: 50px;padding: 10px;text-align: center;position: relative;margin-bottom: 30px;
            
      #about{
-        background-color: #FF0513;height: 2px;border: none;width: 20%;margin: 0 auto;
+        background-color: #322ad1;;height: 2px;border: none;width: 20%;margin: 0 auto;
     }
     }
     h2::first-letter {
-        color: #FF0513;
+        color: #322ad1;
         font-size: 90px;
     }
   .container{
       display: flex;justify-content: space-between;flex-wrap: wrap;
     .pic{
-        width: 250px;height: 300px;border: 10px outset  #FF0513;position: relative;margin: 0 auto;
+        width: 250px;height: 300px;border: 10px outset  #322ad1;position: relative;margin: 0 auto;
         border-radius: 100px 0 80px 0;@include center;margin-bottom: 30px;
         .inner{
             width: 180px;height: auto;@include center;
@@ -68,7 +68,7 @@
       .container{
           
         .pic{
-            width: 330px;height: 380px;border: 10px outset  #FF0513;position: relative;margin: 0 auto;
+            width: 330px;height: 380px;border: 10px outset  #322ad1;position: relative;margin: 0 auto;
             border-radius: 100px 0 80px 0;@include center;margin-bottom: 30px;
             .inner{
                 width: 240px;height: auto;@include center;

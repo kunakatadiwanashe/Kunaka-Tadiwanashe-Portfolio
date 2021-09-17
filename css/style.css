@@ -179,7 +179,7 @@ header ul li a:hover {
   outline: none;
   border: none;
   color: #ffffff;
-  background-color: #FF0513;
+  background-color: #322ad1;
   margin: 0 auto;
   background-color: #0E0C38;
   padding: 5px 0 5px 0;
@@ -249,7 +249,6 @@ header ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#040221, #0E0C38);
 }
 .banner .container {
   display: flex;
@@ -294,7 +293,7 @@ header ul li a:hover {
   outline: none;
   border: none;
   color: #ffffff;
-  background-color: #FF0513;
+  background-color: #322ad1;
 }
 .banner .container .name button:hover {
   background-color: #0E0C38;
@@ -311,7 +310,7 @@ header ul li a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(#040221, #0E0C38);
+  background-color: #040221;
   width: 100%;
   height: 100%;
   opacity: 0.5;
@@ -322,7 +321,7 @@ header ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 12px 12px rgba(255, 255, 255, 0.12);
+  box-shadow: 12px 12px #322ad1;
   margin-left: 2px;
   padding: 30px 0 30px 40px;
   border-radius: 0px 100px 0px 100px;
@@ -349,6 +348,8 @@ header ul li a:hover {
 .banner .container .follow a:hover {
   text-decoration: underline;
   font-family: "semi";
+  -webkit-text-decoration-color: #322ad1;
+          text-decoration-color: #322ad1;
 }
 .banner .container .follow a i {
   margin-right: 15px;
@@ -545,7 +546,7 @@ header ul li a:hover {
   outline: none;
   border: none;
   color: #ffffff;
-  background-color: #FF0513;
+  background-color: #322ad1;
   width: 200px;
 }
 .about button:hover {
@@ -564,14 +565,14 @@ header ul li a:hover {
   margin-bottom: 30px;
 }
 .about h2 #about {
-  background-color: #FF0513;
+  background-color: #322ad1;
   height: 2px;
   border: none;
   width: 20%;
   margin: 0 auto;
 }
 .about h2::first-letter {
-  color: #FF0513;
+  color: #322ad1;
   font-size: 90px;
 }
 .about .container {
@@ -582,7 +583,7 @@ header ul li a:hover {
 .about .container .pic {
   width: 250px;
   height: 300px;
-  border: 10px outset #FF0513;
+  border: 10px outset #322ad1;
   position: relative;
   margin: 0 auto;
   border-radius: 100px 0 80px 0;
@@ -629,7 +630,7 @@ header ul li a:hover {
   .about .container .pic {
     width: 330px;
     height: 380px;
-    border: 10px outset #FF0513;
+    border: 10px outset #322ad1;
     position: relative;
     margin: 0 auto;
     border-radius: 100px 0 80px 0;
