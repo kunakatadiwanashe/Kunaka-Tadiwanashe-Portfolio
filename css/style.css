@@ -810,6 +810,15 @@ footer .container .row .col-md-6 form .btn {
   background-color: #5361FF;
   color: #fff;
 }
+footer .social {
+  padding: 20px 0 20px 0;
+}
+footer .social a {
+  margin: 10px;
+}
+footer .social a i {
+  font-size: 25px;
+}
 footer p {
   font-family: "light";
   font-size: 16px;
@@ -820,6 +829,17 @@ footer p {
 @media screen and (min-width: 768px) {
   .contact {
     padding-left: 120px;
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .social a {
+    margin: 20px;
+  }
+  .social a i {
+    font-size: 40px;
   }
 }
 .projects .container {
