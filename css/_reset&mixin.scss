@@ -85,16 +85,18 @@ table {
 // fonts
  
 @font-face {
-	font-family: bold;
+	font-family: 'bold';
 	src: url(/fonts/Akrobat-ExtraBold.ttf);
   }
 
   @font-face {
-	font-family: light;
+	font-family: 'light';
 	src: url(/fonts/Akrobat-ExtraLight.ttf);
   }
 
   @font-face {
-	font-family: semi;
+	font-family: 'semi';
 	src: url(/fonts/Akrobat-SemiBold.ttf);
   }
+
+
